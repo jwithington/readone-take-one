@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :feeds
+
  # Boostrap default root
  # resources :users
  # root to: 'visitors#index'
