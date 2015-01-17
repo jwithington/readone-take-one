@@ -9,5 +9,11 @@ Rails.application.routes.draw do
  
  # in hartl they'd do
  resources :users
- root 'users#index'
+ root 'sessions#new'
+ 
+ #from hartl chap 8 on logins
+ get    'signup'  => 'users#new'
+ get    'login'   => 'sessions#new'
+ post   'login'   => 'sessions#create'
+ delete 'logout'  => 'sessions#destroy'
 end
