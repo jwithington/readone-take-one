@@ -1,9 +1,11 @@
-<% content_for :title do %>About | ReadOne <% end %>
-<h3>About the Website</h3>
+<% provide(:title, "About") %>
+<h3>About: ReadOne</h3>
 <p>
-This web application was initially created with
-<%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
-from the <%= link_to('RailsApps project', 'http://railsapps.github.io/') %>. 
+	This web application was initially created with
+	<%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
+	from the <%= link_to('RailsApps project', 'http://railsapps.github.io/') %>. 
 </p>
-<p>Much of the code was generated using the amazing <%= link_to('Hartl Tutorial', 'https://www.railstutorial.org/book') %> as a guide.
+<p>
+	Much of the code was generated using the amazing <%= link_to('Hartl Tutorial', 
+	'https://www.railstutorial.org/book') %> as a guide.
 </p>
