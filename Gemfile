@@ -14,7 +14,7 @@ group :development, :test do
   gem 'spring'
 end
 gem 'bootstrap-sass'
-gem 'high_voltage'
+gem 'high_voltage' #see: https://github.com/thoughtbot/high_voltage
 gem 'simple_form'
 group :development do
   gem 'better_errors'
