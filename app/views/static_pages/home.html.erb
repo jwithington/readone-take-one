@@ -1,8 +1,15 @@
 <% provide(:title, "Home") %>
-<h3>Home: ReadOne</h3>
-<p>
-	You've found the ReadOne Home page!
-</p>
-<p>
-	Sometime soon, this should show your feeds.
-</p>
+<% if logged_in? %>
+	<h3>Home: ReadOne</h3>
+	<p>
+		You've found the ReadOne Home page!
+	</p>
+	<p>
+		Sometime soon, this page will show you an article.
+	</p>
+	<p>
+		
+	</p>
+	<% else %>
+    <h3>Click <%= link_to "here to Log in", login_path %></h3>
+  <% end %>
